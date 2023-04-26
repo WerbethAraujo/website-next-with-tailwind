@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaHome } from 'react-icons/fa';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 const Navbar = () => {
   const [toggleIconMenu, setToggleIconMenu] = useState(false);
@@ -67,6 +68,36 @@ const Navbar = () => {
           <li className='hover:text-green-700 p-5'>
             <Link href='/'>Services</Link>
           </li>
+
+          <div className='flex flex-col gap-5 items-center mt-42'>
+            <div className='bg-green-600 w-[250px] h-[1.5px]' />
+            <div className='flex gap-10'>
+              <Link href='#'>
+                <FaFacebook
+                  size={25}
+                  className='text-green-600 hover:-translate-y-1.5 duration-300'
+                />
+              </Link>
+              <Link href='#'>
+                <FaTwitter
+                  size={25}
+                  className='text-green-600 hover:-translate-y-1.5 duration-300'
+                />
+              </Link>
+              <Link href='#'>
+                <FaInstagram
+                  size={25}
+                  className='text-green-600 hover:-translate-y-1.5 duration-300'
+                />
+              </Link>
+              <Link href='#'>
+                <FaYoutube
+                  size={25}
+                  className='text-green-600 hover:-translate-y-1.5 duration-300'
+                />
+              </Link>
+            </div>
+          </div>
         </ul>
       </nav>
     </section>
