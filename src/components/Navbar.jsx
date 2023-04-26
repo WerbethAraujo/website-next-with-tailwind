@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleIconMenu, setToggleIconMenu] = useState(false);
 
   return (
-    <section className='fixed bg-white top-0 w-[100%] z-20'>
+    <section className='fixed bg-white top-0 w-[100%] z-20 shadow-md'>
       <nav className='container mx-auto flex justify-between items-center p-4'>
         <div className='flex gap-1 items-center text-xl md:text-2xl font-bold'>
           <span className='italic'>Art</span>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='hover:text-green-700'>
-            <Link href='/'>Products</Link>
+            <Link href='#products'>Products</Link>
           </li>
           <li className='hover:text-green-700'>
             <Link href='/'>Categories</Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='hover:text-green-700 p-5'>
-            <Link href='/'>Products</Link>
+            <Link href='#products'>Products</Link>
           </li>
           <li className='hover:text-green-700 p-5'>
             <Link href='/'>Categories</Link>
