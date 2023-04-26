@@ -51,28 +51,26 @@ const CategorySlider = () => {
       className='categorie-slides min-h-[660px]'
     >
       {categories.map((category, idx) => (
-        <>
-          <SwiperSlide
-            className='bg-slate-300 shadow-md min-h-[480px] rounded-md py-16 px-8 mt-10'
-            key={idx}
-          >
-            <div className='flex flex-col gap-y-5 md:flex-row md:gap-x-16'>
-              <Image src={category.image} width={500} height={400} />
-              <div className='flex flex-col gap-y-5'>
-                <div className='text-2xl font-medium gap-x-2 flex items-center'>
-                  {category.name}
-                </div>
-                <div className='h-[3px] w-[40px] bg-green-600 rounded' />
-                <div className='text-[20px] text-gray-600'>
-                  {category.description}
-                </div>
-                <div>
-                  <Button link='#' text={category.btnText} />
-                </div>
+        <SwiperSlide
+          className='bg-slate-300 shadow-md min-h-[480px] rounded-md py-16 px-8 mt-10'
+          key={idx}
+        >
+          <div className='flex flex-col gap-y-5 md:flex-row md:gap-x-16'>
+            <Image src={category.image} width={500} height={400} />
+            <div className='flex flex-col gap-y-5'>
+              <div className='text-2xl font-medium gap-x-2 flex items-center'>
+                {category.name}
+              </div>
+              <div className='h-[3px] w-[40px] bg-green-600 rounded' />
+              <div className='text-[20px] text-gray-600'>
+                {category.description}
+              </div>
+              <div>
+                <Button link='#' text={category.btnText} />
               </div>
             </div>
-          </SwiperSlide>
-        </>
+          </div>
+        </SwiperSlide>
       ))}
     </Swiper>
   );
